@@ -55,7 +55,7 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 //    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath];
 //    track.audioFileURL = fileURL;
     
-    track.audioFileURL = [NSURL URLWithString:@"http://43.226.162.43/m10.music.126.net/20160711165719/5dc0536e58e41d22e04aab2e0eccd18b/ymusic/e965/d288/5003/f6a10da6c3306f97d1606b0854af76d8.mp3?wshc_tag=0&wsts_tag=57835abf&wsid_tag=72fb4b74&wsiphost=ipdbm"];
+    track.audioFileURL = [NSURL URLWithString:@"https://github.com/0summer0/NowPlayingInfoCenterDemo/raw/master/the_road.mp3"];
     _streamer = [DOUAudioStreamer streamerWithAudioFile:track];
     [_streamer addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:kStatusKVOKey];
     [_streamer addObserver:self forKeyPath:@"duration" options:NSKeyValueObservingOptionNew context:kDurationKVOKey];
